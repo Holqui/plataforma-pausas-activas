@@ -1,0 +1,27 @@
+<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8" /> <title>Plataforma de Pausas Activas</title> <link rel="stylesheet" href="styles.css" /> </head> <body> <header> <h1>Pausas activas para teletrabajadores</h1> <p>Promueve tu bienestar físico y mental mientras trabajas desde casa.</p> </header> <main> <section id="rutinas"> <h2>Rutinas disponibles</h2> <div id="lista-rutinas"></div> </section>
+<section id="registro">
+  <h2>Registrar pausa realizada</h2>
+  <form id="form-sesion">
+    <label>
+      Nombre del teletrabajador:
+      <input type="text" id="usuario" required />
+    </label>
+    <label>
+      Rutina:
+      <select id="rutinaSelect" required></select>
+    </label>
+    <label>
+      Fecha:
+      <input type="date" id="fecha" required />
+    </label>
+    <button type="submit">Registrar pausa</button>
+  </form>
+  <p id="mensaje-form"></p>
+</section>
+
+<section id="historial">
+  <h2>Historial de pausas</h2>
+  <ul id="lista-sesiones"></ul>
+</section>
+
+</main> <script src="main.js"></script> </body> </html>
