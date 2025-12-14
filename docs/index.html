@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plataforma de Pausas Activas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Pausas activas para teletrabajadores</h1>
+    <p>Promueve tu bienestar físico y mental mientras trabajas desde casa.</p>
+  </header>
+
+  <main>
+    <section id="filtros">
+      <h2>Filtrar rutinas</h2>
+      <div class="filtros-contenedor">
+        <label>
+          Parte del cuerpo:
+          <select id="filtroZona">
+            <option value="todas">Todas</option>
+            <option value="Cuerpo completo">Cuerpo completo</option>
+            <option value="Cuello y hombros">Cuello y hombros</option>
+            <option value="Hombros y brazos">Hombros y brazos</option>
+            <option value="Espalda">Espalda</option>
+            <option value="Muñecas y manos">Muñecas y manos</option>
+            <option value="Ojos">Ojos</option>
+          </select>
+        </label>
+        <label>
+          Duración:
+          <select id="filtroDuracion">
+  <option value="todas">Todas</option>
+  <option value="Corta (3 min)">Corta (3 min)</option>
+  <option value="Corta (5 min)">Corta (5 min)</option>
+  <option value="Media (8 min)">Media (8 min)</option>
+  <option value="Media (10 min)">Media (10 min)</option>
+</select>
+        </label>
+      </div>
+    </section>
+
+    <section id="rutinas">
+      <h2>Rutinas disponibles</h2>
+      <div id="lista-rutinas"></div>
+    </section>
+
+    <section id="detalle-rutina">
+      <h2>Detalle de la rutina</h2>
+      <div id="contenido-detalle">
+        <p>Selecciona "Iniciar rutina" en alguna tarjeta para ver el paso a paso.</p>
+      </div>
+    </section>
+
+    <section id="registro">
+      <h2>Registrar pausa realizada</h2>
+      <form id="form-sesion">
+        <label>
+          Nombre del teletrabajador:
+          <input type="text" id="usuario" required />
+        </label>
+        <label>
+          Rutina:
+          <select id="rutinaSelect" required></select>
+        </label>
+        <label>
+          Fecha:
+          <input type="date" id="fecha" required />
+        </label>
+        <button type="submit">Registrar pausa</button>
+      </form>
+      <p id="mensaje-form"></p>
+    </section>
+
+    <section id="historial">
+      <h2>Historial de pausas</h2>
+      <ul id="lista-sesiones"></ul>
+    </section>
+
+    <section id="tips">
+      <h2>Tips de ergonomía y bienestar</h2>
+      <button id="btnMostrarTips">Ver recomendaciones</button>
+      <div id="contenido-tips" class="oculto">
+        <ul>
+          <li>Mantén la pantalla a la altura de los ojos y a una distancia aproximada de un brazo.</li>
+          <li>Apoya los pies completamente en el piso o en un soporte estable.</li>
+          <li>Evita pasar más de 45–60 minutos seguidos sentado sin realizar una pausa activa corta.</li>
+          <li>Procura alternar entre estar sentado y de pie cuando sea posible.</li>
+          <li>Hidrátate durante la jornada y realiza respiraciones profundas varias veces al día.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
