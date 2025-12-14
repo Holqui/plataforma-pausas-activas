@@ -1,5 +1,4 @@
-const API_URL = "https://plataforma-pausas-activas.onrender.com/api";
-
+const API_URL = "https://plataforma-pausas-activas.onrender.com";
 
 let rutinasGlobal = [];
 
